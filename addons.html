@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://unpkg.com/vue@next" defer></script>
+       <script src="app.js" defer></script>
+       <link rel="stylesheet" href="style.css" />
+       <title>Document</title>
+</head>
+<body>
+       <div id="app">
+       <div class="Plan-info" v-show="stepT">
+              <h2 class="blueHeading">  Select your plan </h2>
+              <p class="interface-para"> You have the option of monthly or yearly billing.</p>
+              <div class="price-plan">
+                  <div>
+                    <img src="./assets/images/icon-arcade.svg"/>
+                    <h3 class="planHeading">Arcade</h3>
+                    <p class="pricePara">  $9/mo</p>
+                  </div>
+      
+                  <div>
+                    <img src="./assets/images/icon-advanced.svg"/>
+                    <h3 class="planHeading">Advanced</h3>
+                    <p class="pricePara"> $12/mo</p>
+                  </div>
+      
+                  <div>
+                    <img src="./assets/images/icon-pro.svg"/>
+                    <h3 class="planHeading">Pro</h3>
+                    <p class="pricePara"> $15/mo</p>
+                  </div>
+      
+              </div>
+              <div class="switcher">
+                <h4>Monthly </h4> 
+                <input type="checkbox" id="toggle" class="offscreen" >
+                <label for="toggle" class="switch"></label>
+                <h4> Yearly </h4>
+              </div>
+      
+              <div class="plan-btns">
+      
+                <button>Go Back</button>
+              
+                <!-- <div class="parent" @click="toggle" v-model="">
+                  <div class="child" :class="{translate}">.</div>
+                </div> -->
+                <button> Next Step</button>
+              </div>
+       
+      
+            <!-- Step 2 end -->
+            </div>
+       </div>
+</body>
+</html>
